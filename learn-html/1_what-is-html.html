@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+            *{
+              margin: 0;
+              padding 0;
+
+            }
+            .nav-container{
+      background-color: darkslategray;
+      list-style: none;
+      display: flex;
+            }
+            .nav-item{
+              padding : 15px;
+              cursor : pointer;
+            }
+            .nav-item:hover{
+              background-color: deeppink;
+
+
+            }
+            .nav-item a{
+              text-align: center;
+              text-decoration: none;
+              color: white;
+            }
+            .circle {
+              width : 20px;
+              height : 20px;
+              background-color: greenyellow;
+              border-radius: 50%;
+              position: absolute;
+              animation: move-the-circle 1.5s infinite;
+
+            }
+            .circle:nth-child(2) {
+              left: 30px;
+              animation-delay: 0.1s;
+
+              }
+              .circle:nth-child(3) {
+              left: 60px;
+              animation-delay: 0.2s;
+
+              }
+              .circle:nth-child(4) {
+              left: 90px;
+              animation-delay: 0.3s;
+
+              }
+              .circle:nth-child(5) {
+              left: 120px;
+              animation-delay: 0.4s;
+
+              }
+              .circle:nth-child(6) {
+              left: 150px;
+              animation-delay: 0.5s;
+
+              }
+              .circle:nth-child(7) {
+              left: 180px;
+              animation-delay: 0.6s;
+
+              }
+              .circle:nth-child(8) {
+              left: 210px;
+              animation-delay: 0.7s;
+
+              }
+            @keyframes move-the-circle {
+            0% {
+              transform: translate(0, 0); scale(1)
+
+            }
+            50% {
+              transform: translate(0, 50px); scale(0.5)
+            }
+            100% {
+              transform: translate(0, 0); scale(1)
+            }
+            }
+            }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-container">
+        <li class="nav-item"><a href="#">홈</a></li>
+        <li class="nav-item"><a href="#">상품</a></li>
+        <li class="nav-item"><a href="#">장바구니</a></li>
+        <li class="nav-item"><a href="#">마이페이지</a></li>
+      </ul>
+    </nav>
+    <br />
+    <div class="animation-wrapper"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </body>
+  <form action="">
+    <div>
+      <label for="username">아이디</label>
+      <input type="text" id="username" />
+    </div>
+    <div>
+      <label for="password">비밀번호</label>
+      <input type="password" id="password" />
+    </div>
+    <input type="submit" value="로그인" />
+  </form>
+  <br />
+  <br />
+  <hr />
+  <br />
+  <h2>천연잔디</h2>
+  <br />
+  <img width="200" height="200" src="../graas.jpg" />
+
+  <br />
+  <br />
+  <hr />
+  <h2>1. 개요</h2>
+  <hr />
+  <br />
+  <h3>장점</h3>
+  <br />
+
+  <li>천연 잔디는 초기 공사비가 인조 잔디보다 저렴하다.</li>
+  <br />
+  <li>
+    또한 식물이기 때문에 경기장 표면의 온도와 습도를 조절하며 선수들 부상 위험이
+    상대적으로 더 낮다.
+  </li>
+  <br />
+  <li>
+    또한 플라스틱(PP)계열의 인조 잔디는 잔디 자체가 거칠다 보니
+    <br />
+    슬라이딩 시 피부쓸림의 위험이 있다.
+  </li>
+  <br />
+  <li>
+    하지만 천연 잔디의 경우 슬라이딩만 잘 하면 이런 위험이 거의 없고 계속
+    자라나다보니<br />
+    자외선으로 인한 탈색이 발생하지 않는다.
+  </li>
+  <br />
+  <hr />
+  <br />
+
+  <h3>단점</h3>
+  <br />
+  <ul>
+    <li>저온에 약하다.</li>
+    <br />
+    <li>지속적으로 물을 공급해 줘야 한다</li>
+    <br />
+    <li>
+      또한, 잔디 생육 문제 때문에 돔경기장에는 제한적으로 쓸 수 밖에 없다.
+    </li>
+    <br />
+    <li>그냥 놔두면 생각보다 매우 크게 자라기 때문에 자주 깎아주어야 한다.</li>
+  </ul>
+  <br /><br />
+  <hr />
+</html>
